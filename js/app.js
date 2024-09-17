@@ -1,4 +1,4 @@
-// Função principal para pesquisar e exibir informações sobre Pokémon
+ // Função principal para pesquisar e exibir informações sobre Pokémon
 function pesquisar() {
     // Dados dos Pokémon disponíveis para pesquisa
     const Kratos = {
