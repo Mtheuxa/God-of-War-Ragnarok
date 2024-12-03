@@ -1,6 +1,6 @@
-// Função principal para pesquisar e exibir informações sobre Pokémon
+// Função principal para pesquisar e exibir informações sobre Deuses
 function pesquisar() {
-    // Dados dos Pokémon disponíveis para pesquisa
+    // Dados dos Deuses disponíveis para pesquisa
     const Kratos = {
         nome: "Kratos",
         descricao: "O Fantasma de Esparta, um guerreiro espartano atormentado pelo passado de ter assassinado sua família e os deuses do Olimpo. Em busca de redenção, Kratos embarca em uma jornada através dos reinos nórdicos.",
@@ -48,13 +48,13 @@ function pesquisar() {
         btnFechar: "Fechar"
     };
 
-    // Armazena todos os Pokémon em um array
+    // Armazena todos os Deuses em um array
     const dados = [Kratos, Atreus, Mimir, Freya, Thor, Tyr];
 
     // Obtém o valor do input de pesquisa, remove espaços extras e converte para minúsculas
     const inputNome = document.getElementById("god-name").value.trim().toLowerCase();
 
-    // Encontra o Pokémon que corresponde ao nome fornecido
+    // Encontra o Deus que corresponde ao nome fornecido
     const resultado = dados.find(dado => dado.nome.toLowerCase() === inputNome);
 
     // Obtém a seção onde o resultado será exibido
@@ -62,7 +62,7 @@ function pesquisar() {
 
     // Verifica se um resultado foi encontrado
     if (resultado) {
-        // Se encontrado, atualiza o conteúdo HTML da seção com as informações do Pokémon
+        // Se encontrado, atualiza o conteúdo HTML da seção com as informações do Deus
         section.innerHTML = `
         <div class="item-resultado">
           <div class="info-result">
